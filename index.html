@@ -1,0 +1,184 @@
+<html>
+
+<head>
+<style>
+header{
+height:150px;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(111,75,82,1) 51%, rgba(71,46,91,1) 89%);
+}
+footer{
+height:150px;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(111,75,82,1) 51%, rgba(71,46,91,1) 89%);
+}
+body{
+background-color:black;
+color:white;
+font-size:16px;
+}
+.buttons {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+.container {
+  max-width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.headings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.headings-table th,
+.headings-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.headings-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+th{
+color:black;
+font-size:20px;
+}
+.example {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.example-box {
+  width: 200px;
+  height: 100px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+	
+  }
+  img{
+  width:100%;
+  }
+  .button {
+    display: block;
+    margin: 10px auto;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<br>
+<h1 align ="center" >Тема 2. Форматування тексту та додавання стилів CSS</h1>
+</header>
+ <div class="buttons">
+      <a href="index.html" class="button">Теорія</a>
+      <a href="task.html" class="button">Завдання</a>
+    </div>
+<div class="content">
+	<h2 align ="center"> Заголовки</h2>
+	<p align ="center"> Є шість видів заголовків, які відрізняються розмірами:</p>
+	<table class="headings-table">
+      <tr>
+        <th>Заголовок</th>
+        <th>Тег HTML</th>
+      </tr>
+      <tr>
+        <td><h1>Заголовок рівня 1</h1></td>
+        <td>&lt;h1&gt;&lt;/h1&gt;</td>
+      </tr>
+      <tr>
+        <td><h2>Заголовок рівня 2</h2></td>
+        <td>&lt;h2&gt;&lt;/h2&gt;</td>
+      </tr>
+      <tr>
+        <td><h3>Заголовок рівня 3</h3></td>
+        <td>&lt;h3&gt;&lt;/h3&gt;</td>
+      </tr>
+      <tr>
+        <td><h4>Заголовок рівня 4</h4></td>
+        <td>&lt;h4&gt;&lt;/h4&gt;</td>
+      </tr>
+      <tr>
+        <td><h5>Заголовок рівня 5</h5></td>
+        <td>&lt;h5&gt;&lt;/h5&gt;</td>
+      </tr>
+      <tr>
+        <td><h6>Заголовок рівня 6</h6></td>
+        <td>&lt;h6&gt;&lt;/h6&gt;</td>
+      </tr>
+    </table>
+	<h1>Пояснення атрибута align у HTML</h1>
+	<h2>Щоб розмістити текст зліва,по центру або справа на сторінці ми використаємо атрибут align. </h2>
+    <div class="example">
+      <div class="example-box" align="left">&lt;h1 align="left"&gt;&lt;/h1&gt</div>
+      <div class="example-box" align="center">&lt;h1 align="center"&gt;&lt;/h1&gt</div>
+      <div class="example-box" align="right">&lt;h1 align="right"&gt;&lt;/h1&gt</div>
+    </div>
+    <p>Атрибут <code>align</code> записується у відкриваючому тезі і може використовуватись для тегів p та h<br>
+	
+	 
+	</p><br><br>
+	<h2 align ="center"> CSS</h2>
+	<h2 align ="center">
+	Щоб задати певному елементу стиль, потрібно використати тег &lt;style&gt; в середині тегу &lt;head&gt;, після тегу &lt;title&gt;.
+</h2>
+<h2 align ="center">
+Тег &lt;style &gt;&lt;/style&gt
+</h2>
+<img src ="img1.png">
+<h2>
+Спробуємо змінити колір нашого абзацу<br>
+Колір тексту - властивість(атрибут) color<br>
+
+Також нам хочеться виділити текст певним кольором.<br>
+Зробити це можна за допомогою властивості color, та наявності тексту на нашій сторінці.
+</h2>
+<img src ="img2.png">
+<h2>
+Атрибут class в тегах - селектор для style<br>
+Задає стильовий клас, який дозволяє зв'язати певний тег зі стильовим оформленням.
+У значенні допускається вказувати відразу кілька класів, розділяючи їх між собою пробілом.
+</h2>
+<img src ="img3.png">
+<h2>Клас(class) - властивість(атрибут, селектор) для стилізацї.</h2>
+<img src ="img4.png">
+<h2>Стиль шрифту(Сім'я шрифтів) - font-family та розмір тексту - font-size<br>
+font-family - встановлює сімейство шрифту, яке буде використовуватися для оформлення тексту вмісту.<br>
+font-size - визначає розмір шрифту(тексту) елемента.</h2>
+<img src ="img5.png">
+</div>
+ 
+<footer><br><h1>HTML&CSS</h1></footer>
+
+</div>
+</body>
+</html>
